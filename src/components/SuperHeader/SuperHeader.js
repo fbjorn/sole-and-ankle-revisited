@@ -4,7 +4,7 @@ import styled from 'styled-components/macro';
 import SearchInput from '../SearchInput';
 import UnstyledButton from '../UnstyledButton';
 import Icon from '../Icon';
-import { onDesktop, onTablet } from '../../styles';
+import { fromTablet, onTablet } from '../../styles';
 
 const SuperHeader = () => {
   return (
@@ -27,7 +27,7 @@ const Wrapper = styled.div``;
 const DecorativeLine = styled.div`
   border-top: 4px solid black;
 
-  ${onDesktop} {
+  ${fromTablet} {
     display: none;
   }
 `;
