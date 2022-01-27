@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components/macro';
+import { THEME } from '../../styles';
 
 const GlobalStyles = createGlobalStyle`
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -71,6 +72,8 @@ html {
     Silence the warning about missing Reach Dialog styles
   */
   --reach-dialog: 1;
+
+  ${THEME}
 }
 
 html, body, #root {
